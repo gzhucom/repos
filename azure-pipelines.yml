@@ -16,5 +16,3 @@ variables:
 
 steps:
 - script: echo Input macro = $(mySimpleVar). Env DefaultWorkingDi =$(System.DefaultWorkingDirectory)
-  condition: eq(variables['agent.os'], 'Windows_NT')
-- script: echo Input macro = $(mySimpleVar). Env var = $MYSIMPLEVAR

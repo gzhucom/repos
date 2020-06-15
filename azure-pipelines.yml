@@ -15,6 +15,6 @@ variables:
   "my var with spaces": var with spaces value
 
 steps:
-- script: echo Input macro = $(mySimpleVar). Env var = %MYSIMPLEVAR%
+- script: echo Input macro = $(mySimpleVar). Env DefaultWorkingDi =$(System.DefaultWorkingDirectory)
   condition: eq(variables['agent.os'], 'Windows_NT')
 - script: echo Input macro = $(mySimpleVar). Env var = $MYSIMPLEVAR
